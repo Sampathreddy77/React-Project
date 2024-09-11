@@ -5,7 +5,7 @@ import CustomSpinner  from '../Loader/infy-spin';
 import CustomToast from '../Toast/toast';
 import CustomInstaHeart from '../Instaheart/insta-heart';
 
-function CustomCard({title,text,location}) {
+function CustomCard({title,text,location,removeHandler,ind}) {
   return (
     <Card style={{width:'18rem'}}>
       
@@ -15,15 +15,15 @@ function CustomCard({title,text,location}) {
         </Card.Title>
         <Card.Text>
           {text}
-          <CustomDNALoader height={"100"} width={"100"} />
+          {/* <CustomDNALoader height={"100"} width={"100"} />
           <CustomSpinner/>
-          <CustomToast/>
+          <CustomToast/> */}
           <CustomInstaHeart/>
         </Card.Text>
         <Card.Text>
           {location}
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button variant="primary" onClick={()=>removeHandler(ind)}>Remove</Button>
       </Card.Body>
     </Card>
   );

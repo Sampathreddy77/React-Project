@@ -11,12 +11,7 @@ export const FirstComponent = () => {
         <div className="row">
           <div className="col-sm-4">
             <CustomCard title={"Ram"} text={"React Dev"} />
-          </div>
-          <div className="col-sm-4">
-            <CustomCard title={"Raju"} text={"Angular dev"} />
-          </div>
-          <div className="col-sm-4">
-            <CustomCard text={"Mern Dev"} title={"suresh"} />
+            
           </div>
         </div>
       </div>

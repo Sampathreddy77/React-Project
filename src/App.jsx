@@ -13,6 +13,7 @@ import { FirstComponent } from "./Component/Bootstrap/first-component"
 import YoutubeButton from "./Component/Class/youtube"
 import CustomBootCard from "./Component/Bootstrap/bootcard"
 import RecipesListing from "./Component/RecipesListing/recipesList"
+import CardAddition from "./Component/card-add/card-add"
 
 
 
@@ -24,9 +25,12 @@ function App() {
   return (
 
     <>
+    <CardAddition/>
+  {/* <RecipesListing/> */}
+    {/* <FirstComponent/> */}
     {/* <CustomBootCard/> */}
    {/* <YoutubeButton/> */}
-   <RecipesListing/>
+   {/* <RecipesListing/> */}
 
 </>
   )
