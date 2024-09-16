@@ -14,6 +14,7 @@ import YoutubeButton from "./Component/Class/youtube"
 import CustomBootCard from "./Component/Bootstrap/bootcard"
 import RecipesListing from "./Component/RecipesListing/recipesList"
 import CardAddition from "./Component/card-add/card-add"
+import FetchProducts from "./Component/Products/categories"
 
 
 
@@ -25,7 +26,8 @@ function App() {
   return (
 
     <>
-    <CardAddition/>
+    <FetchProducts/>
+    {/* <CardAddition/> */}
   {/* <RecipesListing/> */}
     {/* <FirstComponent/> */}
     {/* <CustomBootCard/> */}

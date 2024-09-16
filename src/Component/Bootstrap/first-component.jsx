@@ -1,4 +1,5 @@
 import CustomCard from "./card";
+import CardAddition from "../card-add/card-add";
 
 export const FirstComponent = () => {
   return (
@@ -8,9 +9,10 @@ export const FirstComponent = () => {
         <p>Resize this responsive page to see the effect!</p>
       </div>
       <div className="container mt-5">
-        <div className="row">
-          <div className="col-sm-4">
-            <CustomCard title={"Ram"} text={"React Dev"} />
+        <div className="row" >
+          <div className="col-sm-4" >
+            {/* <CustomCard title={"Ram"} text={"React Dev"} /> */}
+
             
           </div>
         </div>
