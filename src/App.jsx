@@ -16,7 +16,7 @@ import RecipesListing from "./Component/RecipesListing/recipesList"
 import CardAddition from "./Component/card-add/card-add"
 import FetchProducts from "./Component/Products/categories"
 import ParentComponent from "./Component/Purecomponent/parent"
-import BulbTask from "./Component/Bulbtask/bulb_task"
+import BulbTask from "./Component/Bulbtask/bulb_on/bulb"
 
 
 
