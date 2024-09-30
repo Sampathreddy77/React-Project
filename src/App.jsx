@@ -1,51 +1,17 @@
-import React, { Children } from "react"
-// import CustomGeneral from "./Prop/General-prop"
-// import CustomChild_prop from "./Prop/Children_prop/Child_prop"
-// import CustomList from "./Component/List/list"
-// import CustomSpin from "./Component/Loader/color_spin"
-// import CustomToast from "./Component/Toast/toast"
-// import LoginComponent from "./Prop/Children_prop/login"
-// import CustomButton from "./Component/button/button"
-// import CustomGreeting from "./Component/Greeting/greeting"
-// import CustomCard from "./Component/Bootstrap/card"
-// import { EmployeeDetails } from "./Component/data/employee data"
-// import { FirstComponent } from "./Component/Bootstrap/first-component"
-// import YoutubeButton from "./Component/Class/youtube"
-// import CustomBootCard from "./Component/Bootstrap/bootcard"
-// import RecipesListing from "./Component/RecipesListing/recipesList"
-// import CardAddition from "./Component/card-add/card-add"
-// import FetchProducts from "./Component/Products/categories"
-// import ParentComponent from "./Component/Purecomponent/parent"
-// import BulbTask from "./Component/Bulbtask/bulb_on/bulb"
-// import Counter from "./Component/hooks/useState/counter"
-// import CustomTodo from "./Component/hooks/todo-list"
-import Uncontrolled_Form from "./Component/hooks/useRef/Uncontrolled-From"
+import React, { Children } from "react";
+import ControlledForm from "./Component/hooks/useRef/Controlled-Forms/controlled-form";
 
 
 
 
 function App() {
-
   return (
-
-
     <>
-    <Uncontrolled_Form/>
-    {/* <CustomTodo/> */}
-   {/* < Counter/> */}
-    {/* <ParentComponent/> */}
-    {/* <BulbTask/> */}
-    {/* <FetchProducts/> */}
-    {/* <CardAddition/> */}
-  {/* <RecipesListing/> */}
-    {/* <FirstComponent/> */}
-    {/* <CustomBootCard/> */}
-   {/* <YoutubeButton/> */}
-   {/* <RecipesListing/> */}
 
-</>
-  )
+        <ControlledForm />
+
+    </>
+  );
 }
 
-export default App
-
+export default App;

@@ -21,7 +21,7 @@ const Uncontrolled_Form = () => {
       console.log(FormErrors);
     } else {
       //call Api
-      console.log("Submit");
+      console.log("Submitted");
       loginApi(usernameEntered, passwordEntered);
     }
   };
@@ -49,11 +49,19 @@ const Uncontrolled_Form = () => {
       const response = await axios.post("https://dummyjson.com/auth/login", {
         username: username,
         password: password,
-      });
+      })
+    if(response.status===200){
+      alert("Login in successful")
+    }
+    else{
+      alert("Login Failed")
+    }
+    }
       // console.log(response)
-    } catch (error) {
+     catch (error) {
       console.log(error);
     }
+   
   };
 
   return (
@@ -71,7 +79,7 @@ const Uncontrolled_Form = () => {
         </div>
         <div className="form-group">
           <label htmlFor="pwd">Password:</label>
-          <input className="form-control" id="pwd" ref={passwordRef} />
+          <input className="form-control" id="pwd" type="password" ref={passwordRef} />
           <span style={{ color: "red" }}>{formErrors?.passwordError}</span>
         </div>
 
