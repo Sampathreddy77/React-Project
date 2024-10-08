@@ -1,4 +1,4 @@
-const TableComponent = ({ rowData }) => {
+const TableComponent = ({ rowData=[] }) => {
   return (
     <>
       <table className="table table-striped">
@@ -13,9 +13,10 @@ const TableComponent = ({ rowData }) => {
           {rowData.map((eachRow) => {
             return (
               <tr>
-                <td>{eachRow.model}</td>
-                <td>{eachRow.mobileNumber}</td>
-                <td>{eachRow.state}</td>
+                {/* for reUsability :used eachRow.data instead of each Row.model */}
+                <td>{eachRow.data1}</td>
+                <td>{eachRow.data2}</td>
+                <td>{eachRow.data3}</td>
               </tr>
             );
           })}

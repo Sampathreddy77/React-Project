@@ -1,7 +1,8 @@
 import React, { Children } from "react";
 // import ControlledForm from "./Component/hooks/useRef/Controlled-Forms/controlled-form";
 // import UseEffectExample from "./Component/hooks/useEffect/useEffect";
-import ControlledForm from "./Component/hooks/useRef/Controlled-Forms/controledform2";
+// import ControlledForm from "./Component/hooks/useRef/Controlled-Forms/controledform2";
+import UseEffectExample2 from "./Component/hooks/useEffect/useEffectEx2";
 
 
 
@@ -9,7 +10,8 @@ import ControlledForm from "./Component/hooks/useRef/Controlled-Forms/controledf
 function App() {
   return (
     <>
-<ControlledForm/>
+<UseEffectExample2/>
+{/* <ControlledForm/> */}
 {/* <UseEffectExample/> */}
         {/* <ControlledForm /> */}
 

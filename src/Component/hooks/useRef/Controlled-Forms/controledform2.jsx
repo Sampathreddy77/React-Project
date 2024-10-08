@@ -32,9 +32,19 @@ const ControlledForm = () => {
   };
 
   const OnSubmit = (event) => {
+
     event.preventDefault();
     console.log(formData);
-    setSubmittedData([...submittedData, formData]);
+    
+
+    const newFormData={
+      data1:formData.model,
+      data2:formData.mobileNumber,
+      data3:formData.state
+    }
+    // to reuse the table its changed
+
+    setSubmittedData([...submittedData, newFormData]);
     setFormData(InitialData);
   };
 
