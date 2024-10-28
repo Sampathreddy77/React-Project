@@ -1,10 +1,12 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./product-screen.css";
+import { UserDetails } from "../navigation/navigation-stack";
 
 const ProductScreen = () => {
   const [product, setProduct] = useState([]);
+ const {Username}=useContext(UserDetails)
 
   useEffect(() => {
     fetchData();
@@ -19,7 +21,7 @@ const ProductScreen = () => {
 
   return (
     <div>
-      <h2>Product screen</h2>
+      <h2> Hey {Username},welcome to Product screen</h2>
       <div className="card-container">
         {product.map((each) => (
           <div className="card" key={each.id}>

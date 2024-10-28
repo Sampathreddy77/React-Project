@@ -1,10 +1,12 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { UserDetails } from "../navigation/navigation-stack";
 
 const ProductsDetailScreen = () => {
    const dynamicData= useParams()
    const [productData,setProductData]=useState({})
+   const {Username}=useContext(UserDetails)
 
 
    useEffect(()=>{
@@ -21,7 +23,7 @@ if(response.status===200){
    }
   return (
     <div>
-      <h3>Product details Screen</h3>
+      <h3>hey {Username} ,You are viewing Product details Screen</h3>
 {
     Object.keys(productData).length>0 &&
     <>
